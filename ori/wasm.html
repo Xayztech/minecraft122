@@ -16,7 +16,7 @@
   <h2>Downloading Update...</h2>
   <div id="progressBar"><div>0%</div></div>
   <script>
-    const DB_NAME = 'loaderDB', DB_VERSION = 1, STORE_NAME = 'files', URL_TO_LOAD = 'https://xycoolcraft.vercel.app/minecraft122/ori/ww.bin';
+    const DB_NAME = 'loaderDB', DB_VERSION = 1, STORE_NAME = 'files', URL_TO_LOAD = 'https://xycoolcraft.vercel.app/ori/ww.bin';
     function openDB() {
       return new Promise((resolve, reject) => {
         const request = indexedDB.open(DB_NAME, DB_VERSION);

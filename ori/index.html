@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="origin-trial" content="AnK1l8doXsEJaqta4YwSZwS3x0KdMj+/Bhp7kxvZi5wom1PIwid2dSEj/RLH8VnQON2TdNFkKf5jgL+ksAoC+AMAAABueyJvcmlnaW4iOiJodHRwczovL2hhcHBpbmVzc2FkLmdpdGh1Yi5pbzo0NDMiLCJmZWF0dXJlIjoiV2ViQXNzZW1ibHlKU1Byb21pc2VJbnRlZ3JhdGlvbiIsImV4cGlyeSI6MTc1MzE0MjQwMH0=" />
     <title>WebAssembly Support</title>
+    
     <style>
         :root {
             --bg: #0f0f0f;
@@ -171,7 +172,7 @@
     </style>
     <script>
         if (typeof WebAssembly === "undefined" || typeof WebAssembly.Suspending === "undefined") {
-            loadPage('play.html');
+            // window.location.href = 'https://xycoolcraft.vercel.app/ori/wasm';
         }
 
         let timerDuration = 20;
@@ -191,7 +192,7 @@
 
                 if (timeLeft <= 0) {
                     clearInterval(timerInterval);
-                    loadPage('wasm.html'); // Загружаем страницу через JS
+                    // window.location.href = 'https://xycoolcraft.vercel.app/ori/wasm.html';
                 }
             }, 1000);
         }
@@ -202,26 +203,16 @@
             document.querySelector('.progress__bar').style.width = '0%';
         }
 
-        function loadPage(url) {
-            fetch(url)
-                .then(response => response.text())
-                .then(content => {
-                    document.open();
-                    document.write(content);
-                    document.close();
-                })
-                .catch(error => console.error('Error loading page:', error));
-        }
-
-        window.addEventListener('load', () => {
+        // window.addEventListener('load', () => {
             startTimer();
             document.body.classList.add('loaded');
         });
     </script>
 </head>
+
 <body>
     <div class="container">
-        <h1>🚀 WebAssembly Enabled</h1>
+        <h1>🚀 WebAssembly GC Enabled</h1>
         <p>Experience Minecraft 1.12.2 with 2x performance using our new WebAssembly engine. Existing singleplayer worlds will be preserved. Remake By XYCoolcraft</p>
         <p class="text-secondary">Note: Requires sufficient device memory for optimal performance.</p>
 
@@ -231,10 +222,10 @@
         <div class="timer-text">Auto-redirect in 20 seconds...</div>
 
         <div class="buttons">
-            <a href="#" class="btn btn--secondary" onclick="cancelTimer(); loadPage('play.html'); return false;">
+            <a href="https://xycoolcraft.vercel.app/ori/wasm" class="btn btn--secondary" onclick="cancelTimer()">
                 Continue with JavaScript
             </a>
-            <a href="#" class="btn btn--primary" onclick="cancelTimer(); loadPage('wasm.html'); return false;">
+            <a href="https://xycoolcraft.vercel.app/ori/wasm.html" class="btn btn--primary" onclick="cancelTimer()">
                 Launch WebAssembly Version
             </a>
         </div>

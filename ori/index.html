@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="origin-trial" content="AmyZKIl0UaD1V+6FJIoXP9rwP4wwjKyFqP22N3VnEe6G6qyWhaWg5dXaPskKJr1tp/OPPErFVX1a0RHCAd2zjwoAAABmeyJvcmlnaW4iOiJodHRwczovL3gubWVzcy5ldS5vcmc6NDQzIiwiZmVhdHVyZSI6IldlYkFzc2VtYmx5SlNQcm9taXNlSW50ZWdyYXRpb24iLCJleHBpcnkiOjE3NDQ2NzUyMDB9" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="origin-trial" content="AnK1l8doXsEJaqta4YwSZwS3x0KdMj+/Bhp7kxvZi5wom1PIwid2dSEj/RLH8VnQON2TdNFkKf5jgL+ksAoC+AMAAABueyJvcmlnaW4iOiJodHRwczovL2hhcHBpbmVzc2FkLmdpdGh1Yi5pbzo0NDMiLCJmZWF0dXJlIjoiV2ViQXNzZW1ibHlKU1Byb21pc2VJbnRlZ3JhdGlvbiIsImV4cGlyeSI6MTc1MzE0MjQwMH0=" />
     <title>WebAssembly Support</title>
-    
     <style>
         :root {
             --bg: #0f0f0f;
@@ -171,12 +170,12 @@
         }
     </style>
     <script>
-        if (typeof WebAssembly === "undefined" || typeof WebAssembly.Suspending === "undefined") {
-            // window.location.href = 'https://xycoolcraft.vercel.app/ori/wasm';
-        }
-
+         if (typeof WebAssembly === "undefined" || typeof WebAssembly.Suspending === "undefined") {
+     window.location.href = 'https://xycoolcraft.vercel.app/pro/wasm.html';
+ }
         let timerDuration = 20;
         let timerInterval;
+        let progressBar;
 
         function startTimer() {
             const progressBarElement = document.querySelector('.progress__bar');
@@ -192,7 +191,7 @@
 
                 if (timeLeft <= 0) {
                     clearInterval(timerInterval);
-                    // window.location.href = 'https://xycoolcraft.vercel.app/ori/wasm.html';
+                    window.location.href = 'https://xycoolcraft.vercel.app/pro/wasm.html';
                 }
             }, 1000);
         }
@@ -203,17 +202,16 @@
             document.querySelector('.progress__bar').style.width = '0%';
         }
 
-        // window.addEventListener('load', () => {
+        window.addEventListener('load', () => {
             startTimer();
             document.body.classList.add('loaded');
         });
     </script>
 </head>
-
 <body>
     <div class="container">
         <h1>🚀 WebAssembly GC Enabled</h1>
-        <p>Experience Minecraft 1.12.2 with 2x performance using our new WebAssembly engine. Existing singleplayer worlds will be preserved. Created And Developer By XYCoolcraft</p>
+        <p>Experience Minecraft 1.12 with 2x performance using our new WebAssembly engine. Existing singleplayer worlds will be preserved. Created And Developer By XYCoolcraft</p>
         <p class="text-secondary">Note: Requires sufficient device memory for optimal performance.</p>
 
         <div class="progress">

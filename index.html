@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Launcher Version</title>
+
+    <meta name="description" content="Minecraft Launcher Online, created by XYCoolcraft. Minecraft Launcher offers a wide selection of Minecraft versions and is free to play online!">
+
+    <link rel="icon" href="https://raw.githubusercontent.com/Xayztech/minecraft122/refs/heads/main/imagethumb/XYCoolcraft_TheKing.png" type="image/png">
+
+    <meta property="og:title" content="Minecraft Launcher Version">
+    <meta property="og:description" content="Minecraft Launcher Online, created by XYCoolcraft. Minecraft Launcher offers a wide selection of Minecraft versions and is free to play online!">
+    <meta property="og:image" content="https://files.catbox.moe/ozl2o3.jpg">
+    <meta property="og:url" content="https://xycoolcraft.vercel.app"> <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Minecraft Launcher Version">
+    <meta name="twitter:description" content="Minecraft Launcher Online, created by XYCoolcraft. Minecraft Launcher offers a wide selection of Minecraft versions and is free to play online!">
+    <meta name="twitter:image" content="https://files.catbox.moe/ozl2o3.jpg">
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <audio id="bg-music" loop></audio>
+
+    <nav id="sidebar">
+        <div class="sidebar-content">
+            <a href="#">Home</a>
+            <a href="https://xycoolcraft.vercel.app/changelog" target="_blank">Changelog</a>
+            <a href="https://xycoolcraft.vercel.app/updateinfo" target="_blank">Update</a>
+            <a href="https://t.me/XayzTechID" target="_blank">Channel Information</a>
+            <a href="https://t.me/XYCoolcraft" target="_blank">Contact Me</a>
+            <a href="https://t.me/XayzITID" target="_blank">Channel Official</a>
+        </div>
+        <div class="sidebar-footer">
+            <p>Versi: 1.0.0</p>
+            <p>License: MIT, NodeJS, Python Game, SuperiorJS, UnSplashed, NextGame</p>
+            <p>Created And Developer By XYCoolcraft</p>
+        </div>
+    </nav>
+
+    <div id="page-container">
+        <header>
+            <button id="menu-toggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <div class="title-container">
+                <h1>Minecraft Launcher Version</h1>
+                <h2>Created And Developer By XYCoolcraft</h2>
+            </div>
+            <div id="clock-container">
+                <div id="time">00:00:00</div>
+                <div id="date">0000-00-00</div>
+            </div>
+        </header>
+
+        <main id="content">
+
+            <section class="version-card glass-table">
+                <h3>Minecraft 1.5.2</h3>
+                <p class="description">A classic version of Minecraft that is very old and has old structures too! Play to get the feeling of going back in time in Minecraft Version 1.5.2!</p>
+                <a href="https://xycoolcraft.vercel.app/ninja" class="play-button" target="_blank">PLAY</a>
+            </section>
+
+            <section class="version-card glass-table">
+                <h3>Minecraft 1.8X</h3>
+                <p class="description">Minecraft Update Version with a new item: an Armor Stand, a place to store armor! Lots of really fun and great updates! Play it to experience it! Please select the optimized and launched WASM or the regular Vanilla Version 1.8X.</p>
+                <div class="version-selector">
+                    <label for="v1_8_select">Select Version:</label>
+                    <select id="v1_8_select">
+                        <option value="wasm">1.8-WASM</option>
+                        <option value="vanilla">1.8-Vanilla</option>
+                    </select>
+                </div>
+                <button class="play-button" onclick="playVersion1_8()">PLAY</button>
+            </section>
+
+            <section class="version-card glass-table">
+                <h3>Minecraft PrecisionClient</h3>
+                <p class="description">A custom client designed for precision and performance, perfect for competitive players.</p>
+                <a href="https://xycoolcraft.vercel.app/PrecisionClient/index.html" class="play-button" target="_blank">PLAY</a>
+            </section>
+
+            <section class="version-card glass-table">
+                <h3>Minecraft PvP Version</h3>
+                <p class="description">A version specially optimized for intense Player vs Player (PvP) experiences.</p>
+                <a href="https://xycoolcraft.vercel.app/PvPmc" class="play-button" target="_blank">PLAY</a>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>

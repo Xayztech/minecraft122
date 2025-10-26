@@ -1,6 +1,6 @@
 # Minecraft Launcher Online! 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Xayztech/minecraft122/refs/heads/main/imagethumb/logo.png" alt="Thumbnail" />
+  <img src="https://raw.githubusercontent.com/Xayztech/minecraft122/refs/heads/main/imagethumb/XYCoolcraft_TheKing.png" alt="Thumbnail" />
 </p>
 
 ---

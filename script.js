@@ -116,6 +116,6 @@ function playVersion1_8() {
     if (selectedValue === 'wasm') {
         window.open('https://xycoolcraft.vercel.app/ninja', '_blank');
     } else if (selectedValue === 'vanilla') {
-        window.open('https://xycoolcraft.vercel.app/PvPmc/1.82', '_blank');
+        window.open('https://xycoolcraft.vercel.app/ninja-js', '_blank');
     }
 }

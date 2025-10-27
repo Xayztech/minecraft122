@@ -114,8 +114,8 @@ function playVersion1_8() {
     const selectedValue = select.value;
 
     if (selectedValue === 'wasm') {
-        window.open('https://xycoolcraft.vercel.app/ninja-wasm', '_blank');
+        window.open('https://xycoolcraft.vercel.app/ninja-wasm/', '_blank');
     } else if (selectedValue === 'vanilla') {
-        window.open('https://xycoolcraft.vercel.app/ninja-js', '_blank');
+        window.open('https://xycoolcraft.vercel.app/ninja-js/', '_blank');
     }
 }

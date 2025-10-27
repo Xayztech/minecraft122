@@ -1,39 +1,15 @@
 <!DOCTYPE html>
 
-
-
-<!--
-
-This file is from ${date}, there is no official eagler download link anymore, check the websites and discords of your favorite eagler servers for new versions
-
-Be aware that some server owners are lazy and do not update their client regularly
-
-Compile it yourself here: https://gitlab.com/lax1dude/eaglercraftx-1.8/
-
--->
-
-
-
-
-
-
-
-
-
-
-
-
-
 <html>
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="EaglercraftX 1.8 Offline" />
-<meta name="keywords" content="eaglercraft, eaglercraftx, minecraft, 1.8, 1.8.8" />
-<title>EaglercraftX 1.8</title>
+<meta name="description" content="Minecraft 1.8 Offline" />
+<meta name="keywords" content="minecraft, minecraftonline, minecraftlauncher, 1.8, 1.8.8" />
+<title>Minecraft 1.8</title>
 <meta property="og:locale" content="en-US" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="EaglercraftX 1.8 Offline" />
+<meta property="og:title" content="Minecraft 1.8 Offline" />
 <meta property="og:description" content="this file is not a website, whoever uploaded it to this URL is a dumbass" />
 		<style>
 			html {
@@ -138,7 +114,7 @@ window.addEventListener("load", () => {
 </head>
 <body style="margin:0px;width:100vw;height:100vh;overflow:hidden;" id="game_frame">
 			<div id = "dividk">
-			<h1 id="clienttitle">Resent Client</h1>
+			<h1 id="clienttitle">Xayz Tech Client</h1>
 			<h2 id="clientversion">3.5</h2>
 			<p id="progresstext">0%</p>
 			<div id="meter">

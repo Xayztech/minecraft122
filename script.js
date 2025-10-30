@@ -32,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateBackground() {
         const currentHour = new Date().getHours();
-
         if (currentHour >= 6 && currentHour < 18) {
             body.classList.add('day-theme');
             body.classList.remove('night-theme');
@@ -52,13 +51,9 @@ document.addEventListener('DOMContentLoaded', () => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
             }
-            // Opsional: Hapus 'visible' saat keluar layar agar animasi berulang
-            // else {
-            //     entry.target.classList.remove('visible');
-            // }
         });
     }, {
-        threshold: 0.2 // Muncul saat 20% kartu terlihat
+        threshold: 0.1
     });
 
     versionCards.forEach(card => {
@@ -69,19 +64,18 @@ document.addEventListener('DOMContentLoaded', () => {
     let hasInteracted = false;
 
     const musicPlaylist = [
-        'https://xycoolcraft.vercel.app/music/chilled_style_minecraft.mp3',
-        'https://xycoolcraft.vercel.app/music/Cooked_phonk_aura.mp3',
-        'https://xycoolcraft.vercel.app/music/Anti__Hero.mp3',
+        'https://xycoolcraft.vercel.app/music/Anti_Hero.mp3',
         'https://xycoolcraft.vercel.app/music/Arabic_sound_theme_good_to_hear.mp3',
+        'https://xycoolcraft.vercel.app/music/Cooked_phonk_aura.mp3',
         'https://xycoolcraft.vercel.app/music/DJ_Bloodline.mp3',
-        'https://xycoolcraft.vercel.app/music/NO_ERA_AMO.mp3', 
-        'https://xycoolcraft.vercel.app/music/montagem_rugada.mp3',
-        'https://xycoolcraft.vercel.app/music/Matuskha_Phonk.mp3',
-        'https://xycoolcraft.vercel.app/music/Spinning_cat.mp3', 
-        'https://xycoolcraft.vercel.app/music/veki_music.mp3', 
-        'https://xycoolcraft.vercel.app/music/Yung_kai_-_Blue.mp3',
+        'https://xycoolcraft.vercel.app/music/El_Giggante_de_hierro_trend.mp3',
         'https://xycoolcraft.vercel.app/music/Joyful_Chese_Rat_Dance.mp3',
-        'https://xycoolcraft.vercel.app/music/El_Giggante_de_hierro_trend.mp3'
+        'https://xycoolcraft.vercel.app/music/Matuskha_Phonk.mp3',
+        'https://xycoolcraft.vercel.app/music/NO_ERA_AMO.mp3',
+        'https://xycoolcraft.vercel.app/music/montagem_rugada.mp3',
+        'https://xycoolcraft.vercel.app/music/Spinning_cat.mp3',
+        'https://xycoolcraft.vercel.app/music/Yung_kai_-_Blue.mp3',
+        'https://xycoolcraft.vercel.app/music/veki_music.mp3'
     ];
 
     function playRandomMusic() {
@@ -92,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
             musicPlayer.src = musicPlaylist[randomIndex];
             
             musicPlayer.play().catch(error => {
-                console.warn("Autoplay musik dicegah oleh browser. Perlu klik langsung.", error);
+                console.warn("Autoplay musik dicegah oleh browser. Perlu interaksi.", error);
             });
         }
     }
@@ -100,6 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.addEventListener('mousemove', playRandomMusic, { once: true });
     document.body.addEventListener('touchstart', playRandomMusic, { once: true });
     document.body.addEventListener('click', playRandomMusic, { once: true });
+    document.body.addEventListener('scroll', playRandomMusic, { once: true });
 
     musicPlayer.addEventListener('ended', () => {
         const randomIndex = Math.floor(Math.random() * musicPlaylist.length);
